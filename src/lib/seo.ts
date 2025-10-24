@@ -4,10 +4,10 @@ export const siteConfig = {
   name: "Mesfin Kenaw",
   titleTemplate: "%s · Mesfin Kenaw",
   description: "Software developer — elegant web apps, data, and AI.",
-  url: "https://example.com",
-  ogImage: "/images/og.png",
+  url: "https://projectportfolio-1ham.onrender.com/",
+  ogImage: "/og.jpg",
   social: { 
-    github: "#", 
+    github: "github.com/agdgb", 
     linkedin: "#", 
     x: "#", 
     email: "you@example.com" 
@@ -60,7 +60,7 @@ export function SEO({
       
       if (!link) {
         link = document.createElement('link');
-        link.setAttribute('rel', rel);
+        link.setAttribute('rel', rel); 
         document.head.appendChild(link);
       }
       link.setAttribute('href', href);
