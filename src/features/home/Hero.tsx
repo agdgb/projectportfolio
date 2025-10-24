@@ -3,9 +3,9 @@ import avatar from "../../assets/avatar.jpg";
 
 export function Hero() {
   return (
-    <div className="relative overflow-hidden rounded-3xl border">
+    <div className="relative overflow-hidden rounded-3xl">
       <div
-        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-tr
+        className="pointer-events-none absolute inset-0 -z-10 bg-linear-to-tr
                   from-indigo-500/20 via-fuchsia-500/20 to-emerald-500/20 blur-3xl"
       />
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
