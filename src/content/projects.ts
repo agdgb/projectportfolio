@@ -1,7 +1,6 @@
 import { z } from "zod";
 import tinad from "../assets/tinad.png"
 import dashboard from "../assets/dashboard.jpg"
-import ecom from "../assets/ecom.jpeg"
 import auth from "../assets/auth.jpeg"
 
 export const Project = z.object({

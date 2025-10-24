@@ -1,5 +1,5 @@
 import { MDXProvider } from '@mdx-js/react';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 interface MDXComponentsProps {
   children: ReactNode;
