@@ -54,20 +54,15 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
-                as="a"
                 href="/projects"
-                size="lg"
                 className="w-full sm:w-auto"
               >
                 View Projects
               </Button>
               <Button
-                as="a"
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                variant="outline"
-                size="lg"
                 className="w-full sm:w-auto"
               >
                 Download CV

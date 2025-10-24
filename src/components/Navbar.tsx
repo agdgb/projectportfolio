@@ -19,7 +19,7 @@ export function Navbar() {
       <div className="container max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="shrink-0">
             <NavLink
               to="/"
                   className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 rounded"
@@ -42,7 +42,6 @@ export function Navbar() {
                         : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
                     }`
                   }
-                  aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
                 >
                   {item.name}
                 </NavLink>
@@ -95,7 +94,6 @@ export function Navbar() {
                         : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
                     }`
                   }
-                  aria-current={({ isActive }) => (isActive ? 'page' : undefined)}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}

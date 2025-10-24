@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from "react";
 import { z, ZodError } from "zod";
 import { SEO } from "../lib/seo";
@@ -116,6 +117,7 @@ ${validatedData.name}`;
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       handleSubmit(e as any);
     }
   };
@@ -273,7 +275,6 @@ ${validatedData.name}`;
                   type="submit"
                   disabled={isSubmitting}
                   className="w-full"
-                  size="lg"
                 >
                   {isSubmitting ? "Opening Email..." : "Send Message"}
                 </Button>

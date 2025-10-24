@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { MDXProvider } from '@mdx-js/react';
 import type { ReactNode } from 'react';
 

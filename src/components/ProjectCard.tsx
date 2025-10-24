@@ -55,11 +55,9 @@ export function ProjectCard({
         <div className="flex gap-3">
           {liveUrl && (
             <Button
-              as="a"
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              size="sm"
               className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg
               bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-medium shadow-lg
               hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600
@@ -80,12 +78,9 @@ export function ProjectCard({
           )}
           {githubUrl && (
             <Button
-              as="a"
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              variant="outline"
-              size="sm"
               className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg border-gray-300 dark:border-gray-600 
                    bg-linear-to-r from-white/40 to-white/5 dark:from-gray-800/60 dark:to-transparent
                    text-gray-900 dark:text-white shadow-sm hover:shadow-lg transform transition-all duration-200

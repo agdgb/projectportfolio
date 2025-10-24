@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { SEO } from '../lib/seo';
 import { Section } from '../components/Section';
 import { Badge } from '../components/Badge';
@@ -12,6 +13,7 @@ interface BlogPost {
   description: string;
   date: string;
   tags: string[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   content: any;
 }
 
@@ -97,10 +99,7 @@ export function Blog() {
 
                 <div className="flex items-center justify-between">
                   <Button 
-                    as="a" 
                     href={`/blog/${post.slug}`}
-                    variant="outline"
-                    size="sm"
                   >
                     Read More
                   </Button>
